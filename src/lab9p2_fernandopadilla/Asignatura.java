@@ -118,17 +118,17 @@ public class Asignatura {
     @Override
     public String toString() {
         return "Asignatura:" + 
-                "codigoAsignatura=" + codigoAsignatura + 
-                ", codigoSeccion=" + codigoSeccion + 
-                ", horario=" + horario + 
-                ", docente=" + docente + 
-                ", unidadesValorativas=" + unidadesValorativas + 
-                ", aula=" + aula + 
-                ", edificio=" + edificio + 
-                ", cantidadAlumnos=" + cantidadAlumnos + 
-                ", modalidad=" + modalidad + 
-                ", diasImparte=" + diasImparte + 
-                ", precio=" + precio;
+                codigoAsignatura + 
+                codigoSeccion + 
+                horario + 
+                docente + 
+                unidadesValorativas + 
+                aula + 
+                edificio + 
+                cantidadAlumnos + 
+                modalidad + 
+                diasImparte + 
+                precio;
     }
     
     

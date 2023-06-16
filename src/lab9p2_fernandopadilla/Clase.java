@@ -18,6 +18,7 @@ public class Clase extends Asignatura {
 
     @Override
     public String toString() {
-        return "Clase{" + "costo=" + costo + '}';
+        return "Clase:" + 
+                costo;
     }
 }

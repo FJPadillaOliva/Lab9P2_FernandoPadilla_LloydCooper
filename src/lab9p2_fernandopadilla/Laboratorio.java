@@ -18,7 +18,8 @@ public class Laboratorio extends Asignatura {
 
     @Override
     public String toString() {
-        return "Laboratorio{" + "costo=" + costo + '}';
+        return "Laboratorio{" + 
+                costo;
     }
 
     

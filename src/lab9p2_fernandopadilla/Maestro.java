@@ -40,9 +40,9 @@ public class Maestro extends Persona {
     @Override
     public String toString() {
         return "Maestro:" + 
-                "nacionalidad=" + nacionalidad + 
-                ", titulo=" + titulo + 
-                ", clasesImparte=" + clasesImparte;
+                nacionalidad + 
+                titulo + 
+                clasesImparte;
     }
     
     

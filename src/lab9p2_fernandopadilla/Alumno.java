@@ -70,12 +70,12 @@ public class Alumno extends Persona {
     @Override
     public String toString() {
         return "Alumno:" + 
-                "carreraEstudia=" + carreraEstudia + 
-                ", becado=" + becado + 
-                ", indiceActual=" + indiceActual + 
-                ", descuento=" + descuento + 
-                ", cantidadClasesAprobadas=" + cantidadClasesAprobadas + 
-                ", clasesCursanActualmente=" + clasesCursanActualmente;
+                carreraEstudia + 
+                becado + 
+                indiceActual + 
+                descuento + 
+                cantidadClasesAprobadas + 
+                clasesCursanActualmente;
     }
     
     
