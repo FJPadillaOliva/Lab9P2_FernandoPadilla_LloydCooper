@@ -47,6 +47,13 @@ public class Main extends javax.swing.JFrame {
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jb_crearAlumno = new javax.swing.JButton();
+        panel_crearM = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -85,99 +92,97 @@ public class Main extends javax.swing.JFrame {
 
         panel_crearA.setBackground(new java.awt.Color(51, 51, 51));
         panel_crearA.setForeground(new java.awt.Color(204, 204, 204));
+        panel_crearA.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setForeground(new java.awt.Color(204, 204, 204));
         jLabel4.setText("Numero de cuenta");
+        panel_crearA.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 133, -1, -1));
 
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("Contraseña");
+        panel_crearA.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 84, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(204, 204, 204));
         jLabel6.setText("Nombre");
+        panel_crearA.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 36, -1, -1));
 
         jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText("Carrera Estudiada");
+        panel_crearA.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 176, 98, -1));
 
         jLabel8.setForeground(new java.awt.Color(204, 204, 204));
         jLabel8.setText("Descuento");
+        panel_crearA.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 218, -1, -1));
+        panel_crearA.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 120, -1));
+        panel_crearA.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 173, 120, -1));
+        panel_crearA.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 215, 120, -1));
+        panel_crearA.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 81, 120, -1));
+        panel_crearA.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 33, 120, -1));
 
         jLabel9.setForeground(new java.awt.Color(204, 204, 204));
         jLabel9.setText("Becado");
+        panel_crearA.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 257, 56, -1));
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Si");
+        panel_crearA.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 255, -1, -1));
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("No");
+        panel_crearA.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 255, -1, -1));
 
         jb_crearAlumno.setText("Crear");
+        panel_crearA.add(jb_crearAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 307, -1, -1));
 
-        javax.swing.GroupLayout panel_crearALayout = new javax.swing.GroupLayout(panel_crearA);
-        panel_crearA.setLayout(panel_crearALayout);
-        panel_crearALayout.setHorizontalGroup(
-            panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_crearALayout.createSequentialGroup()
+        jLabel16.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel16.setText("Nombre");
+
+        jLabel17.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel17.setText("Contraseña");
+
+        jLabel18.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel18.setText("Numero de cuenta");
+
+        javax.swing.GroupLayout panel_crearMLayout = new javax.swing.GroupLayout(panel_crearM);
+        panel_crearM.setLayout(panel_crearMLayout);
+        panel_crearMLayout.setHorizontalGroup(
+            panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_crearALayout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jRadioButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton2))
-                    .addGroup(panel_crearALayout.createSequentialGroup()
-                        .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(160, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_crearALayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jb_crearAlumno)
-                .addContainerGap())
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel16))
+                        .addGap(51, 51, 51)
+                        .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 174, Short.MAX_VALUE))
         );
-        panel_crearALayout.setVerticalGroup(
-            panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_crearALayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        panel_crearMLayout.setVerticalGroup(
+            panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(jb_crearAlumno)
-                .addContainerGap())
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
+
+        panel_crearA.add(panel_crearM, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 340));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -244,7 +249,7 @@ public class Main extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("No");
 
-        jb_crearAlumno1.setText("Crear");
+        jb_crearAlumno1.setText("Editar");
 
         javax.swing.GroupLayout panel_editarALayout = new javax.swing.GroupLayout(panel_editarA);
         panel_editarA.setLayout(panel_editarALayout);
@@ -308,7 +313,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel15)
                     .addComponent(jRadioButton3)
                     .addComponent(jRadioButton4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jb_crearAlumno1)
                 .addContainerGap())
         );
@@ -353,7 +358,7 @@ public class Main extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 348, Short.MAX_VALUE)
+            .addGap(0, 352, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Eliminar", jPanel4);
@@ -366,7 +371,7 @@ public class Main extends javax.swing.JFrame {
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 348, Short.MAX_VALUE)
+            .addGap(0, 352, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Listar", jPanel5);
@@ -502,6 +507,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -524,6 +532,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
@@ -536,6 +547,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jb_crearAlumno1;
     private javax.swing.JDialog jd_menuadmin;
     private javax.swing.JPanel panel_crearA;
+    private javax.swing.JPanel panel_crearM;
     private javax.swing.JPanel panel_editarA;
     // End of variables declaration//GEN-END:variables
 }
