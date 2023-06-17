@@ -1,7 +1,10 @@
 package lab9p2_fernandopadilla;
 
 import java.util.ArrayList;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -148,8 +151,8 @@ public class Main extends javax.swing.JFrame {
         tf_precio1 = new javax.swing.JTextField();
         jd_menuA = new javax.swing.JDialog();
         jPanel6 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnAgregarClase = new javax.swing.JButton();
+        btnEliminarClase = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jd_agregarClase = new javax.swing.JDialog();
         jPanel7 = new javax.swing.JPanel();
@@ -178,6 +181,9 @@ public class Main extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
+        jdEliminarClase = new javax.swing.JDialog();
+        comboBoxEliminar = new javax.swing.JComboBox<>();
+        btnEliminarClass = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -1108,16 +1114,26 @@ public class Main extends javax.swing.JFrame {
             .addComponent(panel_editarAs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jButton8.setText("Agregar clase");
-        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAgregarClase.setText("Agregar clase");
+        btnAgregarClase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton8MouseClicked(evt);
+                btnAgregarClaseMouseClicked(evt);
             }
         });
 
-        jButton9.setText("Eliminar clase");
+        btnEliminarClase.setText("Eliminar clase");
+        btnEliminarClase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEliminarClaseMouseClicked(evt);
+            }
+        });
 
         jButton10.setText("Simulacion");
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -1125,9 +1141,9 @@ public class Main extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(73, 73, 73)
-                .addComponent(jButton8)
+                .addComponent(btnAgregarClase)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
-                .addComponent(jButton9)
+                .addComponent(btnEliminarClase)
                 .addGap(76, 76, 76))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(193, 193, 193)
@@ -1139,8 +1155,8 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(113, 113, 113)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9))
+                    .addComponent(btnAgregarClase)
+                    .addComponent(btnEliminarClase))
                 .addGap(40, 40, 40)
                 .addComponent(jButton10)
                 .addContainerGap(171, Short.MAX_VALUE))
@@ -1299,6 +1315,38 @@ public class Main extends javax.swing.JFrame {
         jd_agregarClaseLayout.setVerticalGroup(
             jd_agregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        comboBoxEliminar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        btnEliminarClass.setText("Eliminar clase");
+        btnEliminarClass.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEliminarClassMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jdEliminarClaseLayout = new javax.swing.GroupLayout(jdEliminarClase.getContentPane());
+        jdEliminarClase.getContentPane().setLayout(jdEliminarClaseLayout);
+        jdEliminarClaseLayout.setHorizontalGroup(
+            jdEliminarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdEliminarClaseLayout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addComponent(comboBoxEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(148, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jdEliminarClaseLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnEliminarClass)
+                .addGap(84, 84, 84))
+        );
+        jdEliminarClaseLayout.setVerticalGroup(
+            jdEliminarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdEliminarClaseLayout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(comboBoxEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addComponent(btnEliminarClass)
+                .addGap(62, 62, 62))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1469,12 +1517,12 @@ public class Main extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(jd_crearM, "Maestro agregado con exito");
     }//GEN-LAST:event_jb_agregarMMouseClicked
 
-    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+    private void btnAgregarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarClaseMouseClicked
        jd_agregarClase.pack();
         jd_agregarClase.setModal(true);
         jd_agregarClase.setLocationRelativeTo(this);
         jd_agregarClase.setVisible(true);
-    }//GEN-LAST:event_jButton8MouseClicked
+    }//GEN-LAST:event_btnAgregarClaseMouseClicked
 
     private void btnCrearClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearClaseMouseClicked
         // Obtener los valores de los campos de texto
@@ -1497,6 +1545,7 @@ public class Main extends javax.swing.JFrame {
     
     Thread thread = new Thread(() -> {
         try {
+            System.out.println("Agregando");
             Thread.sleep(10000); // Pausa de 10 segundos
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -1506,6 +1555,53 @@ public class Main extends javax.swing.JFrame {
     thread.start();
                 
     }//GEN-LAST:event_btnCrearClaseMouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void btnEliminarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarClaseMouseClicked
+        jdEliminarClase.pack();
+        jdEliminarClase.setModal(true);
+        jdEliminarClase.setLocationRelativeTo(this);
+        jdEliminarClase.setVisible(true);
+    }//GEN-LAST:event_btnEliminarClaseMouseClicked
+
+    private void btnEliminarClassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarClassMouseClicked
+        String codigoSeleccionado = (String) comboBoxEliminar.getSelectedItem();
+
+        Clase claseEliminar = null;
+        for (Clase clase : clases) {
+            if (clase.getCodigoAsignatura().equals(codigoSeleccionado)) {
+                claseEliminar = clase;
+                break;
+            }
+        }
+
+        if (claseEliminar != null) {
+            final Clase claseEliminarFinal = claseEliminar;
+
+            Thread thread = new Thread(() -> {
+                for (int segundos = 5; segundos > 0; segundos--) {
+                    System.out.println("Eliminando...");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                clases.remove(claseEliminarFinal);
+                System.out.println("Clase eliminada correctamente");
+                JOptionPane.showMessageDialog(null, "Clase eliminada correctamente", "Eliminación exitosa", JOptionPane.INFORMATION_MESSAGE);
+            });
+            thread.start();
+        } else {
+            JOptionPane.showMessageDialog(null, "No se encontró la clase a eliminar", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }//GEN-LAST:event_btnEliminarClassMouseClicked
+    
+
 
     /**
      * @param args the command line arguments
@@ -1543,8 +1639,12 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgregarClase;
     private javax.swing.JButton btnCrearClase;
+    private javax.swing.JButton btnEliminarClase;
+    private javax.swing.JButton btnEliminarClass;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JComboBox<String> comboBoxEliminar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
@@ -1553,8 +1653,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1635,6 +1733,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jb_agregarM1;
     private javax.swing.JButton jb_crearAlumno1;
     private javax.swing.JButton jb_crearAlumno2;
+    private javax.swing.JDialog jdEliminarClase;
     private javax.swing.JDialog jd_agregarClase;
     private javax.swing.JDialog jd_crearA;
     private javax.swing.JDialog jd_crearAs;
