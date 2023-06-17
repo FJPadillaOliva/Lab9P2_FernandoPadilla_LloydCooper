@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package lab9p2_fernandopadilla;
 
 import java.util.ArrayList;
@@ -15,7 +11,7 @@ public class Main extends javax.swing.JFrame {
 
     ArrayList<Alumno> alumnos = new ArrayList();
     ArrayList<Maestro> maestros = new ArrayList();
-    
+    ArrayList<Clase> clases = new ArrayList();
     public Main() {
         initComponents();
     }
@@ -151,6 +147,37 @@ public class Main extends javax.swing.JFrame {
         jLabel47 = new javax.swing.JLabel();
         tf_precio1 = new javax.swing.JTextField();
         jd_menuA = new javax.swing.JDialog();
+        jPanel6 = new javax.swing.JPanel();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jd_agregarClase = new javax.swing.JDialog();
+        jPanel7 = new javax.swing.JPanel();
+        tfCodigoAsignatura = new javax.swing.JTextField();
+        tfCodigoSeccion = new javax.swing.JTextField();
+        tfHorario = new javax.swing.JTextField();
+        tfDocente = new javax.swing.JTextField();
+        tfUV = new javax.swing.JTextField();
+        tfAula = new javax.swing.JTextField();
+        tfEdificio = new javax.swing.JTextField();
+        tfCantAlumnos = new javax.swing.JTextField();
+        tfModalidad = new javax.swing.JTextField();
+        tfDiasImparte = new javax.swing.JTextField();
+        tfPrecio = new javax.swing.JTextField();
+        tfCosto = new javax.swing.JTextField();
+        btnCrearClase = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -517,7 +544,7 @@ public class Main extends javax.swing.JFrame {
         jd_crearM.getContentPane().setLayout(jd_crearMLayout);
         jd_crearMLayout.setHorizontalGroup(
             jd_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel_crearM, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(panel_crearM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jd_crearMLayout.setVerticalGroup(
             jd_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1081,15 +1108,197 @@ public class Main extends javax.swing.JFrame {
             .addComponent(panel_editarAs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jButton8.setText("Agregar clase");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
+
+        jButton9.setText("Eliminar clase");
+
+        jButton10.setText("Simulacion");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addComponent(jButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addGap(76, 76, 76))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(193, 193, 193)
+                .addComponent(jButton10)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(113, 113, 113)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton8)
+                    .addComponent(jButton9))
+                .addGap(40, 40, 40)
+                .addComponent(jButton10)
+                .addContainerGap(171, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jd_menuALayout = new javax.swing.GroupLayout(jd_menuA.getContentPane());
         jd_menuA.getContentPane().setLayout(jd_menuALayout);
         jd_menuALayout.setHorizontalGroup(
             jd_menuALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jd_menuALayout.setVerticalGroup(
             jd_menuALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        btnCrearClase.setText("Crear clase");
+        btnCrearClase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCrearClaseMouseClicked(evt);
+            }
+        });
+
+        jLabel4.setText("Codigo asignatura");
+
+        jLabel5.setText("Codigo seccion");
+
+        jLabel6.setText("Horario");
+
+        jLabel7.setText("Docente");
+
+        jLabel8.setText("UV");
+
+        jLabel9.setText("Aula");
+
+        jLabel16.setText("Edificio");
+
+        jLabel17.setText("Cantidad alumnos");
+
+        jLabel18.setText("Modalidad");
+
+        jLabel19.setText("Dias imparte");
+
+        jLabel20.setText("Precio");
+
+        jLabel21.setText("Costo");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(89, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tfCodigoAsignatura)
+                    .addComponent(tfCodigoSeccion)
+                    .addComponent(tfHorario)
+                    .addComponent(tfDocente)
+                    .addComponent(tfUV)
+                    .addComponent(tfAula)
+                    .addComponent(tfEdificio)
+                    .addComponent(tfCantAlumnos)
+                    .addComponent(tfModalidad)
+                    .addComponent(tfDiasImparte)
+                    .addComponent(tfPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnCrearClase))
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addGap(18, 18, 18)
+                            .addComponent(tfCosto)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel21)))
+                .addGap(39, 39, 39))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfCodigoAsignatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfCodigoSeccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(tfCosto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfDocente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfUV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfAula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfEdificio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfCantAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfModalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfDiasImparte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel19))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCrearClase)
+                    .addComponent(jLabel20))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_agregarClaseLayout = new javax.swing.GroupLayout(jd_agregarClase.getContentPane());
+        jd_agregarClase.getContentPane().setLayout(jd_agregarClaseLayout);
+        jd_agregarClaseLayout.setHorizontalGroup(
+            jd_agregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jd_agregarClaseLayout.setVerticalGroup(
+            jd_agregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1260,6 +1469,44 @@ public class Main extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(jd_crearM, "Maestro agregado con exito");
     }//GEN-LAST:event_jb_agregarMMouseClicked
 
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+       jd_agregarClase.pack();
+        jd_agregarClase.setModal(true);
+        jd_agregarClase.setLocationRelativeTo(this);
+        jd_agregarClase.setVisible(true);
+    }//GEN-LAST:event_jButton8MouseClicked
+
+    private void btnCrearClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearClaseMouseClicked
+        // Obtener los valores de los campos de texto
+    String codigoAsignatura = tfCodigoAsignatura.getText();
+    String codigoSeccion = tfCodigoSeccion.getText();
+    String horario = tfHorario.getText();
+    String docente = tfDocente.getText();
+    int unidadesValorativas = Integer.parseInt(tfUV.getText());
+    String aula = tfAula.getText();
+    String edificio = tfEdificio.getText();
+    int cantidadAlumnos = Integer.parseInt(tfCantAlumnos.getText());
+    String modalidad = tfModalidad.getText();
+    String diasImparte = tfDiasImparte.getText();
+    double precio = Double.parseDouble(tfPrecio.getText());
+    double costo = Double.parseDouble(tfCosto.getText());
+    
+    Clase clase = new Clase(costo, codigoAsignatura, codigoSeccion, horario, docente, unidadesValorativas, aula, edificio, cantidadAlumnos, modalidad, diasImparte, precio);
+    clases.add(clase);
+
+    
+    Thread thread = new Thread(() -> {
+        try {
+            Thread.sleep(10000); // Pausa de 10 segundos
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        JOptionPane.showMessageDialog(null, "Clase creada correctamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+    });
+    thread.start();
+                
+    }//GEN-LAST:event_btnCrearClaseMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1296,14 +1543,18 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCrearClase;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1311,7 +1562,13 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -1321,6 +1578,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -1331,6 +1589,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -1341,6 +1600,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -1351,11 +1611,16 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -1370,6 +1635,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jb_agregarM1;
     private javax.swing.JButton jb_crearAlumno1;
     private javax.swing.JButton jb_crearAlumno2;
+    private javax.swing.JDialog jd_agregarClase;
     private javax.swing.JDialog jd_crearA;
     private javax.swing.JDialog jd_crearAs;
     private javax.swing.JDialog jd_crearM;
@@ -1386,6 +1652,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel panel_editarM;
     private javax.swing.JRadioButton rb_becadoNo1;
     private javax.swing.JRadioButton rb_becadoSi1;
+    private javax.swing.JTextField tfAula;
+    private javax.swing.JTextField tfCantAlumnos;
+    private javax.swing.JTextField tfCodigoAsignatura;
+    private javax.swing.JTextField tfCodigoSeccion;
+    private javax.swing.JTextField tfCosto;
+    private javax.swing.JTextField tfDiasImparte;
+    private javax.swing.JTextField tfDocente;
+    private javax.swing.JTextField tfEdificio;
+    private javax.swing.JTextField tfHorario;
+    private javax.swing.JTextField tfModalidad;
+    private javax.swing.JTextField tfPrecio;
+    private javax.swing.JTextField tfUV;
     private javax.swing.JTextField tf_aula1;
     private javax.swing.JTextField tf_aula2;
     private javax.swing.JTextField tf_cantAlumnos1;
