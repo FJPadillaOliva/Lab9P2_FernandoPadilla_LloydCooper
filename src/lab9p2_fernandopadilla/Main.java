@@ -1506,6 +1506,8 @@ public class Main extends javax.swing.JFrame {
                 tf_numcuentaA1.getText(),
                 tf_contrasenaA1.getText()));
         JOptionPane.showMessageDialog(jd_crearA, "Alumno agregado con exito");
+        jd_crearA.setVisible(false);
+        jd_menuadmin.setVisible(false);
     }//GEN-LAST:event_jb_crearAlumno2MouseClicked
 
     private void jb_agregarMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_agregarMMouseClicked
@@ -1553,7 +1555,7 @@ public class Main extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Clase creada correctamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
     });
     thread.start();
-                
+       
     }//GEN-LAST:event_btnCrearClaseMouseClicked
 
     private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
