@@ -408,6 +408,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Crear"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jb_crearAlumno2MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -442,35 +445,35 @@
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel65" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="tf_nombreM2" min="-2" pref="120" max="-2" attributes="0"/>
+                      <Component id="tf_nombreM" min="-2" pref="120" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel66" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="tf_contrasenaM2" min="-2" pref="120" max="-2" attributes="0"/>
+                      <Component id="tf_contrasenaM" min="-2" pref="120" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel67" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="tf_numcuentaM2" min="-2" pref="121" max="-2" attributes="0"/>
+                      <Component id="tf_numcuentaM" min="-2" pref="121" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel68" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="tf_nacionalidad2" min="-2" pref="121" max="-2" attributes="0"/>
+                      <Component id="tf_nacionalidad" min="-2" pref="121" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="jLabel69" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="tf_titulo2" min="-2" pref="121" max="-2" attributes="0"/>
+                      <Component id="tf_titulo" min="-2" pref="121" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="310" pref="310" max="-2" attributes="0"/>
-                      <Component id="jb_agregarM2" min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="jb_agregarM" min="-2" pref="84" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -483,7 +486,7 @@
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Component id="jLabel65" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="tf_nombreM2" min="-2" max="-2" attributes="0"/>
+                          <Component id="tf_nombreM" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -491,7 +494,7 @@
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="tf_contrasenaM2" min="-2" max="-2" attributes="0"/>
+                          <Component id="tf_contrasenaM" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -499,7 +502,7 @@
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Component id="jLabel67" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="tf_numcuentaM2" min="-2" max="-2" attributes="0"/>
+                          <Component id="tf_numcuentaM" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -507,7 +510,7 @@
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="tf_nacionalidad2" min="-2" max="-2" attributes="0"/>
+                          <Component id="tf_nacionalidad" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -515,10 +518,10 @@
                               <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                               <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="tf_titulo2" min="-2" max="-2" attributes="0"/>
+                          <Component id="tf_titulo" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
-                      <Component id="jb_agregarM2" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="jb_agregarM" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -532,7 +535,7 @@
                 <Property name="text" type="java.lang.String" value="Nombre"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_numcuentaM2">
+            <Component class="javax.swing.JTextField" name="tf_numcuentaM">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel66">
               <Properties>
@@ -542,7 +545,7 @@
                 <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_contrasenaM2">
+            <Component class="javax.swing.JTextField" name="tf_contrasenaM">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel67">
               <Properties>
@@ -552,7 +555,7 @@
                 <Property name="text" type="java.lang.String" value="Numero de cuenta"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_nombreM2">
+            <Component class="javax.swing.JTextField" name="tf_nombreM">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel68">
               <Properties>
@@ -562,7 +565,7 @@
                 <Property name="text" type="java.lang.String" value="Nacionalidad"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_nacionalidad2">
+            <Component class="javax.swing.JTextField" name="tf_nacionalidad">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel69">
               <Properties>
@@ -572,12 +575,15 @@
                 <Property name="text" type="java.lang.String" value="Titulo"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_titulo2">
+            <Component class="javax.swing.JTextField" name="tf_titulo">
             </Component>
-            <Component class="javax.swing.JButton" name="jb_agregarM2">
+            <Component class="javax.swing.JButton" name="jb_agregarM">
               <Properties>
                 <Property name="text" type="java.lang.String" value="A&#xf1;adir"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jb_agregarMMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

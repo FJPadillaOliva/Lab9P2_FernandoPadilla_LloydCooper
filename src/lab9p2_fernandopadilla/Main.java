@@ -4,15 +4,18 @@
  */
 package lab9p2_fernandopadilla;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Wendy
  */
 public class Main extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Main
-     */
+    ArrayList<Alumno> alumnos = new ArrayList();
+    ArrayList<Maestro> maestros = new ArrayList();
+    
     public Main() {
         initComponents();
     }
@@ -58,16 +61,16 @@ public class Main extends javax.swing.JFrame {
         jd_crearM = new javax.swing.JDialog();
         panel_crearM = new javax.swing.JPanel();
         jLabel65 = new javax.swing.JLabel();
-        tf_numcuentaM2 = new javax.swing.JTextField();
+        tf_numcuentaM = new javax.swing.JTextField();
         jLabel66 = new javax.swing.JLabel();
-        tf_contrasenaM2 = new javax.swing.JTextField();
+        tf_contrasenaM = new javax.swing.JTextField();
         jLabel67 = new javax.swing.JLabel();
-        tf_nombreM2 = new javax.swing.JTextField();
+        tf_nombreM = new javax.swing.JTextField();
         jLabel68 = new javax.swing.JLabel();
-        tf_nacionalidad2 = new javax.swing.JTextField();
+        tf_nacionalidad = new javax.swing.JTextField();
         jLabel69 = new javax.swing.JLabel();
-        tf_titulo2 = new javax.swing.JTextField();
-        jb_agregarM2 = new javax.swing.JButton();
+        tf_titulo = new javax.swing.JTextField();
+        jb_agregarM = new javax.swing.JButton();
         jd_crearAs = new javax.swing.JDialog();
         panel_crearAs = new javax.swing.JPanel();
         jLabel54 = new javax.swing.JLabel();
@@ -314,6 +317,11 @@ public class Main extends javax.swing.JFrame {
         rb_becadoNo1.setText("No");
 
         jb_crearAlumno2.setText("Crear");
+        jb_crearAlumno2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_crearAlumno2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_crearALayout = new javax.swing.GroupLayout(panel_crearA);
         panel_crearA.setLayout(panel_crearALayout);
@@ -427,7 +435,12 @@ public class Main extends javax.swing.JFrame {
         jLabel69.setForeground(new java.awt.Color(204, 204, 204));
         jLabel69.setText("Titulo");
 
-        jb_agregarM2.setText("Añadir");
+        jb_agregarM.setText("Añadir");
+        jb_agregarM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_agregarMMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_crearMLayout = new javax.swing.GroupLayout(panel_crearM);
         panel_crearM.setLayout(panel_crearMLayout);
@@ -437,30 +450,30 @@ public class Main extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(tf_nombreM2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tf_nombreM, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(tf_contrasenaM2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tf_contrasenaM, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel67)
                 .addGap(18, 18, 18)
-                .addComponent(tf_numcuentaM2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tf_numcuentaM, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(tf_nacionalidad2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tf_nacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(tf_titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tf_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(panel_crearMLayout.createSequentialGroup()
                 .addGap(310, 310, 310)
-                .addComponent(jb_agregarM2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jb_agregarM, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panel_crearMLayout.setVerticalGroup(
             panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -470,33 +483,33 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(panel_crearMLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel65))
-                    .addComponent(tf_nombreM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_nombreM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_crearMLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel66))
-                    .addComponent(tf_contrasenaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_contrasenaM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_crearMLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel67))
-                    .addComponent(tf_numcuentaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_numcuentaM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_crearMLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel68))
-                    .addComponent(tf_nacionalidad2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_nacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel_crearMLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel69))
-                    .addComponent(tf_titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67)
-                .addComponent(jb_agregarM2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jb_agregarM, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout jd_crearMLayout = new javax.swing.GroupLayout(jd_crearM.getContentPane());
@@ -1195,6 +1208,30 @@ public class Main extends javax.swing.JFrame {
         jd_editarAs.setVisible(true);
     }//GEN-LAST:event_jButton7MouseClicked
 
+    private void jb_crearAlumno2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_crearAlumno2MouseClicked
+        boolean becado = false;
+        if (rb_becadoSi1.isSelected()) {
+            becado = true;
+        }else{
+            becado = false;
+        }
+        alumnos.add(new Alumno(tf_carrera1.getText(),becado,
+                0, Integer.parseInt(tf_descuento1.getText()),
+                0, tf_nombreA1.getText(),
+                tf_numcuentaA1.getText(),
+                tf_contrasenaA1.getText()));
+        JOptionPane.showMessageDialog(jd_crearA, "Alumno agregado con exito");
+    }//GEN-LAST:event_jb_crearAlumno2MouseClicked
+
+    private void jb_agregarMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_agregarMMouseClicked
+        maestros.add(new Maestro(tf_nacionalidad.getText(), 
+                tf_titulo.getText(), 
+                tf_nombreM.getText(), 
+                tf_numcuentaM.getText(), 
+                tf_contrasenaM.getText()));
+        JOptionPane.showMessageDialog(jd_crearM, "Maestro agregado con exito");
+    }//GEN-LAST:event_jb_agregarMMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1301,8 +1338,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField9;
     private javax.swing.JButton jb_agregarAs1;
     private javax.swing.JButton jb_agregarAs2;
+    private javax.swing.JButton jb_agregarM;
     private javax.swing.JButton jb_agregarM1;
-    private javax.swing.JButton jb_agregarM2;
     private javax.swing.JButton jb_crearAlumno1;
     private javax.swing.JButton jb_crearAlumno2;
     private javax.swing.JDialog jd_crearA;
@@ -1331,8 +1368,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tf_codigoSec2;
     private javax.swing.JTextField tf_contrasenaA1;
     private javax.swing.JPasswordField tf_contrasenaLogin;
+    private javax.swing.JTextField tf_contrasenaM;
     private javax.swing.JTextField tf_contrasenaM1;
-    private javax.swing.JTextField tf_contrasenaM2;
     private javax.swing.JTextField tf_descuento1;
     private javax.swing.JTextField tf_diasImp1;
     private javax.swing.JTextField tf_diasImp2;
@@ -1344,19 +1381,19 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tf_horario2;
     private javax.swing.JTextField tf_modalidad1;
     private javax.swing.JTextField tf_modalidad2;
+    private javax.swing.JTextField tf_nacionalidad;
     private javax.swing.JTextField tf_nacionalidad1;
-    private javax.swing.JTextField tf_nacionalidad2;
     private javax.swing.JTextField tf_nombreA1;
+    private javax.swing.JTextField tf_nombreM;
     private javax.swing.JTextField tf_nombreM1;
-    private javax.swing.JTextField tf_nombreM2;
     private javax.swing.JTextField tf_numcuentaA1;
     private javax.swing.JTextField tf_numcuentaLogin;
+    private javax.swing.JTextField tf_numcuentaM;
     private javax.swing.JTextField tf_numcuentaM1;
-    private javax.swing.JTextField tf_numcuentaM2;
     private javax.swing.JTextField tf_precio1;
     private javax.swing.JTextField tf_precio2;
+    private javax.swing.JTextField tf_titulo;
     private javax.swing.JTextField tf_titulo1;
-    private javax.swing.JTextField tf_titulo2;
     private javax.swing.JTextField tf_uv1;
     private javax.swing.JTextField tf_uv2;
     // End of variables declaration//GEN-END:variables
