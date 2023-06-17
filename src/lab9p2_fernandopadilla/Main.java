@@ -150,6 +150,7 @@ public class Main extends javax.swing.JFrame {
         tf_diasImp1 = new javax.swing.JTextField();
         jLabel47 = new javax.swing.JLabel();
         tf_precio1 = new javax.swing.JTextField();
+        jd_menuA = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -810,7 +811,7 @@ public class Main extends javax.swing.JFrame {
         );
         jd_editarALayout.setVerticalGroup(
             jd_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel_editarA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE)
+            .addComponent(panel_editarA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         panel_editarM.setBackground(new java.awt.Color(51, 51, 51));
@@ -906,13 +907,13 @@ public class Main extends javax.swing.JFrame {
         jd_editarM.getContentPane().setLayout(jd_editarMLayout);
         jd_editarMLayout.setHorizontalGroup(
             jd_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel_editarM, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(panel_editarM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jd_editarMLayout.setVerticalGroup(
             jd_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_editarMLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(panel_editarM, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(panel_editarM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_editarAs.setBackground(new java.awt.Color(51, 51, 51));
@@ -1080,6 +1081,17 @@ public class Main extends javax.swing.JFrame {
             .addComponent(panel_editarAs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout jd_menuALayout = new javax.swing.GroupLayout(jd_menuA.getContentPane());
+        jd_menuA.getContentPane().setLayout(jd_menuALayout);
+        jd_menuALayout.setHorizontalGroup(
+            jd_menuALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jd_menuALayout.setVerticalGroup(
+            jd_menuALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
@@ -1177,6 +1189,16 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        String nombre = "";
+        boolean login = false;
+        
+        for (Alumno t : alumnos) {
+            if (t.getContrasena().equals(tf_contrasenaLogin.getText()) && t.getNumeroCuenta().equals(tf_numcuentaLogin.getText())) {
+                nombre = t.getNombre();
+                login = true;
+                break;
+            }
+        }
         if (tf_numcuentaLogin.getText().equals("12141095") && tf_contrasenaLogin.getText().equals("HEYjude")) {
             jd_menuadmin.pack();
             jd_menuadmin.setLocationRelativeTo(this);
@@ -1184,6 +1206,12 @@ public class Main extends javax.swing.JFrame {
             jd_menuadmin.setVisible(true);
             tf_numcuentaLogin.setText("");
             tf_contrasenaLogin.setText("");
+        }else if(login){
+            JOptionPane.showMessageDialog(this, "Bienvenido: " + nombre);
+            jd_menuA.pack();
+            jd_menuA.setLocationRelativeTo(this);
+            jd_menuA.setModal(true);
+            jd_menuA.setVisible(true);
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -1348,6 +1376,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog jd_editarA;
     private javax.swing.JDialog jd_editarAs;
     private javax.swing.JDialog jd_editarM;
+    private javax.swing.JDialog jd_menuA;
     private javax.swing.JDialog jd_menuadmin;
     private javax.swing.JPanel panel_crearA;
     private javax.swing.JPanel panel_crearAs;
