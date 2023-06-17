@@ -288,47 +288,116 @@ public class Main extends javax.swing.JFrame {
 
         panel_crearA.setBackground(new java.awt.Color(51, 51, 51));
         panel_crearA.setForeground(new java.awt.Color(204, 204, 204));
-        panel_crearA.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel48.setForeground(new java.awt.Color(204, 204, 204));
         jLabel48.setText("Numero de cuenta");
-        panel_crearA.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 133, -1, -1));
 
         jLabel49.setForeground(new java.awt.Color(204, 204, 204));
         jLabel49.setText("Contraseña");
-        panel_crearA.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 84, -1, -1));
 
         jLabel50.setForeground(new java.awt.Color(204, 204, 204));
         jLabel50.setText("Nombre");
-        panel_crearA.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 36, -1, -1));
 
         jLabel51.setForeground(new java.awt.Color(204, 204, 204));
         jLabel51.setText("Carrera Estudiada");
-        panel_crearA.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 176, 98, -1));
 
         jLabel52.setForeground(new java.awt.Color(204, 204, 204));
         jLabel52.setText("Descuento");
-        panel_crearA.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 218, -1, -1));
-        panel_crearA.add(tf_numcuentaA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 120, -1));
-        panel_crearA.add(tf_carrera1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 173, 120, -1));
-        panel_crearA.add(tf_descuento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 215, 120, -1));
-        panel_crearA.add(tf_contrasenaA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 81, 120, -1));
-        panel_crearA.add(tf_nombreA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 33, 120, -1));
 
         jLabel53.setForeground(new java.awt.Color(204, 204, 204));
         jLabel53.setText("Becado");
-        panel_crearA.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 257, 56, -1));
 
         buttonGroup1.add(rb_becadoSi1);
         rb_becadoSi1.setText("Si");
-        panel_crearA.add(rb_becadoSi1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 255, -1, -1));
 
         buttonGroup1.add(rb_becadoNo1);
         rb_becadoNo1.setText("No");
-        panel_crearA.add(rb_becadoNo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 255, -1, -1));
 
         jb_crearAlumno2.setText("Crear");
-        panel_crearA.add(jb_crearAlumno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 307, -1, -1));
+
+        javax.swing.GroupLayout panel_crearALayout = new javax.swing.GroupLayout(panel_crearA);
+        panel_crearA.setLayout(panel_crearALayout);
+        panel_crearALayout.setHorizontalGroup(
+            panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel50)
+                .addGap(67, 67, 67)
+                .addComponent(tf_nombreA1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel49)
+                .addGap(48, 48, 48)
+                .addComponent(tf_contrasenaA1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel48)
+                .addGap(16, 16, 16)
+                .addComponent(tf_numcuentaA1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(tf_carrera1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel52)
+                .addGap(52, 52, 52)
+                .addComponent(tf_descuento1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(rb_becadoSi1)
+                .addGap(5, 5, 5)
+                .addComponent(rb_becadoNo1))
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(312, 312, 312)
+                .addComponent(jb_crearAlumno2))
+        );
+        panel_crearALayout.setVerticalGroup(
+            panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearALayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel50))
+                    .addComponent(tf_nombreA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel49))
+                    .addComponent(tf_contrasenaA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel48))
+                    .addComponent(tf_numcuentaA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel51))
+                    .addComponent(tf_carrera1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel52))
+                    .addComponent(tf_descuento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(panel_crearALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel53))
+                    .addComponent(rb_becadoSi1)
+                    .addComponent(rb_becadoNo1))
+                .addGap(29, 29, 29)
+                .addComponent(jb_crearAlumno2))
+        );
 
         javax.swing.GroupLayout jd_crearALayout = new javax.swing.GroupLayout(jd_crearA.getContentPane());
         jd_crearA.getContentPane().setLayout(jd_crearALayout);
@@ -342,35 +411,93 @@ public class Main extends javax.swing.JFrame {
         );
 
         panel_crearM.setBackground(new java.awt.Color(51, 51, 51));
-        panel_crearM.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel65.setForeground(new java.awt.Color(204, 204, 204));
         jLabel65.setText("Nombre");
-        panel_crearM.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 39, 88, -1));
-        panel_crearM.add(tf_numcuentaM2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 120, 121, -1));
 
         jLabel66.setForeground(new java.awt.Color(204, 204, 204));
         jLabel66.setText("Contraseña");
-        panel_crearM.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 79, 88, -1));
-        panel_crearM.add(tf_contrasenaM2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 77, 120, -1));
 
         jLabel67.setForeground(new java.awt.Color(204, 204, 204));
         jLabel67.setText("Numero de cuenta");
-        panel_crearM.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 122, -1, -1));
-        panel_crearM.add(tf_nombreM2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 37, 120, -1));
 
         jLabel68.setForeground(new java.awt.Color(204, 204, 204));
         jLabel68.setText("Nacionalidad");
-        panel_crearM.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 159, 88, -1));
-        panel_crearM.add(tf_nacionalidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 157, 121, -1));
 
         jLabel69.setForeground(new java.awt.Color(204, 204, 204));
         jLabel69.setText("Titulo");
-        panel_crearM.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 196, 88, -1));
-        panel_crearM.add(tf_titulo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 194, 121, -1));
 
         jb_agregarM2.setText("Añadir");
-        panel_crearM.add(jb_agregarM2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 84, 35));
+
+        javax.swing.GroupLayout panel_crearMLayout = new javax.swing.GroupLayout(panel_crearM);
+        panel_crearM.setLayout(panel_crearMLayout);
+        panel_crearMLayout.setHorizontalGroup(
+            panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_nombreM2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_contrasenaM2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel67)
+                .addGap(18, 18, 18)
+                .addComponent(tf_numcuentaM2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_nacionalidad2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(310, 310, 310)
+                .addComponent(jb_agregarM2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panel_crearMLayout.setVerticalGroup(
+            panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_crearMLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel65))
+                    .addComponent(tf_nombreM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel66))
+                    .addComponent(tf_contrasenaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel67))
+                    .addComponent(tf_numcuentaM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel68))
+                    .addComponent(tf_nacionalidad2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_crearMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_crearMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel69))
+                    .addComponent(tf_titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67)
+                .addComponent(jb_agregarM2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         javax.swing.GroupLayout jd_crearMLayout = new javax.swing.GroupLayout(jd_crearM.getContentPane());
         jd_crearM.getContentPane().setLayout(jd_crearMLayout);
@@ -551,47 +678,116 @@ public class Main extends javax.swing.JFrame {
 
         panel_editarA.setBackground(new java.awt.Color(51, 51, 51));
         panel_editarA.setForeground(new java.awt.Color(204, 204, 204));
-        panel_editarA.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setForeground(new java.awt.Color(204, 204, 204));
         jLabel10.setText("Numero de cuenta");
-        panel_editarA.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 126, -1, -1));
 
         jLabel11.setForeground(new java.awt.Color(204, 204, 204));
         jLabel11.setText("Contraseña");
-        panel_editarA.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 80, -1, -1));
 
         jLabel12.setForeground(new java.awt.Color(204, 204, 204));
         jLabel12.setText("Nombre");
-        panel_editarA.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 35, -1, -1));
 
         jLabel13.setForeground(new java.awt.Color(204, 204, 204));
         jLabel13.setText("Carrera Estudiada");
-        panel_editarA.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 166, 88, -1));
 
         jLabel14.setForeground(new java.awt.Color(204, 204, 204));
         jLabel14.setText("Descuento");
-        panel_editarA.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 205, -1, -1));
-        panel_editarA.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 124, 120, -1));
-        panel_editarA.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 164, 120, -1));
-        panel_editarA.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 203, 120, -1));
-        panel_editarA.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 78, 120, -1));
-        panel_editarA.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 33, 120, -1));
 
         jLabel15.setForeground(new java.awt.Color(204, 204, 204));
         jLabel15.setText("Becado");
-        panel_editarA.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 244, 56, -1));
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("Si");
-        panel_editarA.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 240, -1, -1));
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("No");
-        panel_editarA.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, -1, -1));
 
         jb_crearAlumno1.setText("Editar");
-        panel_editarA.add(jb_crearAlumno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 304, -1, -1));
+
+        javax.swing.GroupLayout panel_editarALayout = new javax.swing.GroupLayout(panel_editarA);
+        panel_editarA.setLayout(panel_editarALayout);
+        panel_editarALayout.setHorizontalGroup(
+            panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel12)
+                .addGap(63, 63, 63)
+                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel11)
+                .addGap(44, 44, 44)
+                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel10)
+                .addGap(12, 12, 12)
+                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel14)
+                .addGap(48, 48, 48)
+                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jRadioButton3)
+                .addGap(0, 0, 0)
+                .addComponent(jRadioButton4))
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(320, 320, 320)
+                .addComponent(jb_crearAlumno1))
+        );
+        panel_editarALayout.setVerticalGroup(
+            panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_editarALayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel12))
+                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel11))
+                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel10))
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel13))
+                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel14))
+                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_editarALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarALayout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel15))
+                    .addComponent(jRadioButton3)
+                    .addComponent(jRadioButton4))
+                .addGap(41, 41, 41)
+                .addComponent(jb_crearAlumno1))
+        );
 
         javax.swing.GroupLayout jd_editarALayout = new javax.swing.GroupLayout(jd_editarA.getContentPane());
         jd_editarA.getContentPane().setLayout(jd_editarALayout);
@@ -605,35 +801,93 @@ public class Main extends javax.swing.JFrame {
         );
 
         panel_editarM.setBackground(new java.awt.Color(51, 51, 51));
-        panel_editarM.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel32.setForeground(new java.awt.Color(204, 204, 204));
         jLabel32.setText("Nombre");
-        panel_editarM.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 39, 88, -1));
-        panel_editarM.add(tf_numcuentaM1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 120, 121, -1));
 
         jLabel33.setForeground(new java.awt.Color(204, 204, 204));
         jLabel33.setText("Contraseña");
-        panel_editarM.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 79, 88, -1));
-        panel_editarM.add(tf_contrasenaM1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 77, 120, -1));
 
         jLabel34.setForeground(new java.awt.Color(204, 204, 204));
         jLabel34.setText("Numero de cuenta");
-        panel_editarM.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 122, -1, -1));
-        panel_editarM.add(tf_nombreM1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 37, 120, -1));
 
         jLabel35.setForeground(new java.awt.Color(204, 204, 204));
         jLabel35.setText("Nacionalidad");
-        panel_editarM.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 159, 88, -1));
-        panel_editarM.add(tf_nacionalidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 157, 121, -1));
 
         jLabel36.setForeground(new java.awt.Color(204, 204, 204));
         jLabel36.setText("Titulo");
-        panel_editarM.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 196, 88, -1));
-        panel_editarM.add(tf_titulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 194, 121, -1));
 
         jb_agregarM1.setText("Añadir");
-        panel_editarM.add(jb_agregarM1, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 294, 84, 35));
+
+        javax.swing.GroupLayout panel_editarMLayout = new javax.swing.GroupLayout(panel_editarM);
+        panel_editarM.setLayout(panel_editarMLayout);
+        panel_editarMLayout.setHorizontalGroup(
+            panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_nombreM1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_contrasenaM1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel34)
+                .addGap(18, 18, 18)
+                .addComponent(tf_numcuentaM1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_nacionalidad1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tf_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(295, 295, 295)
+                .addComponent(jb_agregarM1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panel_editarMLayout.setVerticalGroup(
+            panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_editarMLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel32))
+                    .addComponent(tf_nombreM1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel33))
+                    .addComponent(tf_contrasenaM1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel34))
+                    .addComponent(tf_numcuentaM1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel35))
+                    .addComponent(tf_nacionalidad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panel_editarMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_editarMLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel36))
+                    .addComponent(tf_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(81, 81, 81)
+                .addComponent(jb_agregarM1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         javax.swing.GroupLayout jd_editarMLayout = new javax.swing.GroupLayout(jd_editarM.getContentPane());
         jd_editarM.getContentPane().setLayout(jd_editarMLayout);
